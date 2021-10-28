@@ -95,19 +95,19 @@ const GlobalStyles = createGlobalStyle`
   /* Custom scrollbar styles */
   body::-webkit-scrollbar {
     inline-size: 8px;
-    background: var(--colorBlack);
+    background: var(--colorPrimaryGreenLight80);
   }
 
   body::-webkit-scrollbar-track {
     inline-size: 8px;
-    background: var(--colorBlack);
-    border: 1px solid #08080840;
+    background: var(--colorPrimaryGreenLight80);
+    border: 1px solid var(--colorPrimaryGreenLight80);
   }
 
   body::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background: var(--colorRed);
-    border: 1px solid #08080840;
+    background: var(--colorPrimaryGreen);
+    border: 1px solid var(--colorPrimaryGreen);
   }
 `
 
