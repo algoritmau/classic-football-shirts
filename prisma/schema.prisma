@@ -1,0 +1,29 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["mongoDb"]
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model shirts {
+  id            String   @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  condition     Json
+  description   String
+  imageUrls     Json[]
+  in_collection String[]
+  is_new_in     Boolean
+  kit_rank      String
+  manufacturer  String
+  name          String
+  player        Json
+  price         String
+  season        String
+  sizes         String[]
+  sku           String
+  sponsors      String[]
+  stock         Json
+  team          Json
+}
