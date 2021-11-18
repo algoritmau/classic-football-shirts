@@ -40,6 +40,7 @@ const HeaderStyles = styled.header`
           font-weight: 400;
           padding: 0.4rem 0.8rem;
           transition: color 0.2s ease-in-out;
+          text-transform: capitalize;
 
           &:hover {
             color: var(--colorPrimaryGreenMedium, green);
