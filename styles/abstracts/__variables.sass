@@ -1,0 +1,14 @@
+@use "sass:meta"
+
+$font-family-mono: "MD IO 0.4", "SF Mono", "Roboto Mono", "Droid Sans Mono", "Consolas", "Liberation Mono", "Menlo", "Courier", "monospace"
+
+$color-gray: #767676
+$color-primary-green: #396740
+
+$section-max-width: 1024px
+
+:root
+  --font-family-mono: #{meta.inspect($font-family-mono)}
+  --color-gray: #{meta.inspect($color-gray)}
+  --color-primary-green: #{meta.inspect($color-primary-green)}
+  --section-max-width: #{meta.inspect($section-max-width)}

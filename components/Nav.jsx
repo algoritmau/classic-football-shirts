@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import NavStyles from './styles/NavStyles'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from "next/link"
+import NavStyles from "./styles/NavStyles"
 
 export default function Nav() {
   return (

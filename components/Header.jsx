@@ -1,7 +1,8 @@
-import Link from 'next/link'
-import Nav from './Nav'
-import styled from 'styled-components'
-import { Language, Menu, ShoppingBag } from 'iconoir-react'
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import Link from "next/link"
+import styled from "styled-components"
+import { Language, Menu, ShoppingBag } from "iconoir-react"
+import Nav from "./Nav"
 
 const HeaderStyles = styled.header`
   .header {
@@ -151,6 +152,7 @@ export default function Header() {
       <div className="header__search-bar-wrapper">
         <div className="header__search-bar">
           <p>Search for your favorite classic football shirt...</p>
+          {/* TODO: Implement Search functionality */}
         </div>
       </div>
       <Nav />

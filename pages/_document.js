@@ -1,12 +1,15 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+/* eslint-disable react/jsx-filename-extension */
+import Document, {
+  Head, Html, Main, NextScript
+} from "next/document"
+import { ServerStyleSheet } from "styled-components"
 
 export default class MyDocument extends Document {
   // Fixing FOUC due to styled-components
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(
-      App => props => sheet.collectStyles(<App {...props} />)
+      (App) => (props) => sheet.collectStyles(<App {...props} />)
     )
     const styleTags = sheet.getStyleElement()
 

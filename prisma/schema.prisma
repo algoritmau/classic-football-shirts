@@ -9,21 +9,28 @@ datasource db {
 }
 
 model shirts {
-  id            String   @id @default(dbgenerated()) @map("_id") @db.ObjectId
-  condition     Json
-  description   String
-  imageUrls     Json[]
-  in_collection String[]
-  is_new_in     Boolean
-  kit_rank      String
-  manufacturer  String
-  name          String
-  player        Json
-  price         String
-  season        String
-  sizes         String[]
-  sku           String
-  sponsors      String[]
-  stock         Json
-  team          Json
+  id                 String   @id @default(dbgenerated()) @map("_id") @db.ObjectId
+  condition          Json
+  description        String
+  imageUrls          Json[]
+  in_collection      String[]
+  is_club_kit        Boolean
+  is_concept_kit     Boolean
+  is_new_in          Boolean
+  is_player_specific Boolean
+  kit_rank           String
+  manufacturer       String
+  name               String
+  player             Json
+  price              String
+  season             String
+  sizes              String[]
+  sku                String
+  sponsors           String[]
+  stock              Json
+  team               Json
+}
+
+model users {
+  id String @id @default(dbgenerated()) @map("_id") @db.ObjectId
 }
