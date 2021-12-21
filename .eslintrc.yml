@@ -11,6 +11,7 @@ env:
 
 extends:
   - airbnb
+  - plugin:@next/next/recommended
 
 parserOptions:
   ecmaVersion: 2019

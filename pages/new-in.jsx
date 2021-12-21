@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client"
-import ShirtCard from "~/components/ShirtCard"
-import ShirtCardsGrid from "~/components/ShirtCardsGrid"
+import ShirtCard from "../components/ShirtCard"
+import ShirtCardsGrid from "../components/ShirtCardsGrid"
 
 export default function NewInShirts({ shirts }) {
   console.log(shirts)

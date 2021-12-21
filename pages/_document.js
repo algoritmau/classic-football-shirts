@@ -5,7 +5,6 @@ import Document, {
 import { ServerStyleSheet } from "styled-components"
 
 export default class MyDocument extends Document {
-  // Fixing FOUC due to styled-components
   static getInitialProps({ renderPage }) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(

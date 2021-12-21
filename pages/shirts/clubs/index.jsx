@@ -1,10 +1,8 @@
 import { PrismaClient } from "@prisma/client"
-import ShirtCard from "~/components/ShirtCard"
-import ShirtCardsGrid from "~/components/ShirtCardsGrid"
+import ShirtCard from "../../../components/ShirtCard"
+import ShirtCardsGrid from "../../../components/ShirtCardsGrid"
 
 export default function Clubs({ shirts }) {
-  console.log(shirts)
-
   return (
     <main className="main">
       <h1 className="main__title">Club Shirts</h1>
