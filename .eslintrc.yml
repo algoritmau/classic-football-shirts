@@ -1,29 +1,40 @@
 ---
 root: true
 
-globals:
-  IS_DEVELOPMENT: "readonly"
-
 env:
   browser: true
-  commonjs: true
   es2021: true
 
 extends:
+  - plugin:react/recommended
   - airbnb
   - plugin:@next/next/recommended
 
 parserOptions:
-  ecmaVersion: 2019
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: "latest"
+  sourceType: module
+
+plugins:
+  - react
 
 rules:
   newline-before-return: "error"
   no-console: "off"
-  semi: ["error", "never"]
-  react/prop-types: "off"
   quotes: ["error", "double"]
-  react/react-in-jsx-scope: "off"
+  react/function-component-definition:
+    - 2
+    - namedComponents: "arrow-function"
   react/jsx-props-no-spreading: "off"
+  react/no-arrow-function-lifecycle: "off"
+  react/no-invalid-html-attribute: "off"
+  react/no-namespace: "off"
+  react/no-unused-class-component-methods: "off"
+  react/prefer-exact-props: "off"
+  react/prop-types: "off"
+  react/react-in-jsx-scope: "off"
+  semi: ["error", "never"]
 
 overrides:
   - files: ["*.js", "*.jsx"]

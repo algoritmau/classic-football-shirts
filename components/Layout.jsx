@@ -129,12 +129,12 @@ const MainStyles = styled.main`
   margin: 0 auto;
 `
 
-export default function Layout({ children }) {
-  return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <MainStyles>{children}</MainStyles>
-    </>
-  )
-}
+const Layout = ({ children }) => (
+  <>
+    <GlobalStyles />
+    <Header />
+    <MainStyles>{children}</MainStyles>
+  </>
+)
+
+export default Layout
